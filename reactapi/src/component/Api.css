@@ -10,3 +10,46 @@ h1{
 h1 span{
     color: #61dafb;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    height: 80vh;
+    width: 100%;
+}
+.container .box{
+    width: 15rem;
+    height: 20rem;
+    margin:2rem;
+    background-color: #333;
+}
+.container .box:nth-child(even){
+    background: #333;
+}
+
+.container .box img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem 3rem;
+}
+ .container .box h3{
+  margin-left: 3rem;
+}
+.container .box p{
+    text-align: center;
+    font-size: 1.2rem;
+    
+} 
+.container .box:nth-child(even){
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.container .box:nth-child(odd){
+    background:black;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,255);
+}
